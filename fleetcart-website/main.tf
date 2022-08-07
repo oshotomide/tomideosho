@@ -7,8 +7,8 @@ provider "aws" {
 # store the terraform state file in s3
 terraform {
   backend "s3" {
-    bucket    = "aosnotes77-dev-terraform-remote-state"
-    key       = "terraform.tfstate.dev"
+    bucket    = "oro-terraform-file"
+    key       = "terraform.statefile.demo"
     region    = "us-east-1"
     profile   = "terraform-user"
   }

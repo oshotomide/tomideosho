@@ -50,7 +50,7 @@ variable "ssh_location" {
 
 # rds variables
 variable "database_snapshot_identifier" {
-  default       = "arn:aws:rds:us-east-1:074869464423:snapshot:demo-db-final-snapshot"
+  default       = "arn:aws:rds:us-east-1:074869464423:snapshot:fleetcart-final-snapshot"
   description   = "database snapshot arn"
   type          = string
 }
@@ -62,7 +62,7 @@ variable "database_instance_class" {
 }
 
 variable "database_instance_identifier" {
-  default       = "demo-db"
+  default       = "my-demo-db"
   description   = "database instance identifier"
   type          = string
 }
@@ -75,7 +75,7 @@ variable "multi_az_deployment" {
 
 # application load balancer variables
 variable "ssl_certificate_arn" {
-  default       = "arn:aws:acm:us-east-1:074869464423:certificate/851ecd09-089c-45f6-ab85-07a37b856a5c"
+  default       = "arn:aws:acm:us-east-1:074869464423:certificate/3eddfdeb-1d73-4a03-8461-e1e974718ba3"
   description   = "ssl certificate arn"
   type          = string
 }
@@ -95,7 +95,7 @@ variable "launch_template_name" {
 }
  
 variable "ec2_image_id" {
-  default       = "ami-0d8c190ab4f8c3b75"    
+  default       = "ami-0e39c82672ad96c2b"    
   description   = "ami id"
   type          = string
 }

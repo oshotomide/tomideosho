@@ -95,7 +95,7 @@ variable "launch_template_name" {
 }
  
 variable "ec2_image_id" {
-  default       = "ami-06070cab5adcf4e42"
+  default       = "ami-0d8c190ab4f8c3b75"    
   description   = "ami id"
   type          = string
 }

@@ -50,7 +50,7 @@ variable "ssh_location" {
 
 # rds variables
 variable "database_snapshot_identifier" {
-  default       = "arn:aws:rds:us-east-1:651783246143:snapshot:fleetcart-final-snapshot"
+  default       = "arn:aws:rds:us-east-1:074869464423:snapshot:demo-db-final-snapshot"
   description   = "database snapshot arn"
   type          = string
 }
@@ -62,7 +62,7 @@ variable "database_instance_class" {
 }
 
 variable "database_instance_identifier" {
-  default       = "dev-rds-db"
+  default       = "demo-db"
   description   = "database instance identifier"
   type          = string
 }
@@ -75,14 +75,14 @@ variable "multi_az_deployment" {
 
 # application load balancer variables
 variable "ssl_certificate_arn" {
-  default       = "arn:aws:acm:us-east-1:651783246143:certificate/bf6c8843-59d7-4d9e-be67-68ee9b3608bf"
+  default       = "arn:aws:acm:us-east-1:074869464423:certificate/851ecd09-089c-45f6-ab85-07a37b856a5c"
   description   = "ssl certificate arn"
   type          = string
 }
 
 # sns topic variables
 variable "operator_email" {
-  default       = "aosnotes77@gmail.com"
+  default       = "tejude2000@yahoo.com"
   description   = "a valid email address"
   type          = string
 }
@@ -95,7 +95,7 @@ variable "launch_template_name" {
 }
  
 variable "ec2_image_id" {
-  default       = "ami-08a5a143e2c5ee1a8"
+  default       = "ami-06070cab5adcf4e42"
   description   = "ami id"
   type          = string
 }
@@ -107,14 +107,14 @@ variable "ec2_instance_type" {
 }
 
 variable "ec2_key_pair_name" {
-  default       = "myec2key"
+  default       = "richmond-keypair"
   description   = "ec2 key pair name"
   type          = string
 }
 
 # route 53 variables
 variable "domain_name" {
-  default       = "aosnotes77.com"
+  default       = "tejude80.com"
   description   = "domain name"
   type          = string
 }
